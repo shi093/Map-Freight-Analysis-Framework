@@ -1,7 +1,7 @@
 # Map-Freight-Analysis-Framework
 This R Shiny web application creates an interactive map for comparing data from FHWA Freight Analysis Framework version 4 (FAF4) vs. version 5 (FAF5).
 
-FAF Zone: shapefile for FAF zones
+FAF_Zones: shapefile for FAF zones
 
 centroid.CSV : FAF zone centroid locations
 
