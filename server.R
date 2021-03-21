@@ -6,17 +6,17 @@ server <- function(input, output, session) {
     
     centroid <- read.csv(file = 'centroid.csv')
     
-    selected_zone <- reactive({
-      p <- input$Zone_shape_click
-      subset(centroid, id==p$id )
-    })
-    
     click_count <- 0
     type <- 0
     origin <- ""
     dest <- ""
     origin_id <- 0
     dest_id <- 0
+    
+    selected_zone <- reactive({
+      p <- input$Zone_shape_click
+      subset(centroid, id==p$id )
+    })
     
     selected_od <- reactive({
       p <- input$Zone_shape_click
