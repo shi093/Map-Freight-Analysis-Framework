@@ -8,3 +8,5 @@ centroid.CSV : FAF zone centroid locations
 od_mode_vol_45.CSV: Origin-destination flows by mode, including tons (000) and $ values (millions)
 
 ui.R and server.R: R scripts for the R shiny web application
+
+![](faf.gif)
