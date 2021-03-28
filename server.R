@@ -59,10 +59,6 @@ server <- function(input, output, session) {
                     highlight = highlightOptions(color = "blue",weight = 2, bringToFront = F, opacity = 0.7))
     })
     
-    observeEvent(input$Zone_shape_click, {
-      proxy <- leafletProxy("Zone", session)
-    })
-    
     observe({
       p <- input$Zone_shape_click
       if (is.null(p))
