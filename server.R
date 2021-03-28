@@ -60,9 +60,6 @@ server <- function(input, output, session) {
     })
     
     observeEvent(input$Zone_shape_click, {
-      p <- input$Zone_shape_click
-      if(is.null(p))
-        return()
       proxy <- leafletProxy("Zone", session)
     })
     
